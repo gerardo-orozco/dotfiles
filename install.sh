@@ -5,5 +5,4 @@ brew install git
 cd; curl -#L https://github.com/gerardo-orozco/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,install.sh,LICENSE-MIT.txt}
 source ~/.bash_profile
 # Install formulae and RVM (http://rvm.io/rvm/install)
-./.osx && ./brew.sh
-#&& \curl -sSL https://get.rvm.io | bash -s stable --ruby
+./.osx && ./brew.sh && \curl -sSL https://get.rvm.io | bash -s stable --ruby
