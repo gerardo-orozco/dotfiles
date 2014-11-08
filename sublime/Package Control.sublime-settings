@@ -1,0 +1,37 @@
+/*
+    I found some of these packages here: https://sublime.wbond.net/browse/popular
+*/
+{
+    "installed_packages": [
+        "Package Control"
+
+        "Emmet",
+        "Djaneiro",
+        "INI",
+        "requirementstxt",
+        "Restructured Text (RST) Snippets",
+        "Handlebars",
+
+        "SublimeCodeIntel",
+        "jQuery",
+        "Sass",
+        "SCSS",
+        "LESS",
+        "JsFormat",
+        "VimL",
+
+        "Theme - Soda",
+        "BracketHighlighter",
+        "SideBarEnhancements",
+        "SublimeLinter",
+        "SublimeLinter-flake8",
+        "Gist",
+        "Gitignore",
+        "OmniMarkupPreviewer",
+        "PythonTraceback",
+        "Backbone.js",
+        "Markdown Preview",
+        "Origami",
+        "Bracket​Highlighter"
+    ]
+}

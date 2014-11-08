@@ -1,0 +1,9 @@
+[submodule "monokai.terminal"]
+	path = monokai.terminal
+	url = git@github.com:stephenway/monokai.terminal.git
+[submodule ".vim"]
+	path = .vim
+	url = git@github.com:sickill/vim-monokai.git
+[submodule "vim-monokai"]
+	path = vim-monokai
+	url = git@github.com:sickill/vim-monokai.git
