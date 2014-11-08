@@ -478,7 +478,7 @@ sudo mdutil -E / > /dev/null
 defaults write com.apple.terminal StringEncodings -array 4
 
 # Use the Monokai theme by default in Terminal.app
-git submodule update
+git submodule update monokai.terminal
 TERM_PROFILE='Monokai';
 CURRENT_PROFILE="$(defaults read com.apple.terminal 'Default Window Settings')";
 if [ "${CURRENT_PROFILE}" != "${TERM_PROFILE}" ]; then
@@ -614,14 +614,16 @@ echo "Installing Sublime Text 3..."
 SUBLIME_DMG_DEST="${HOME}/Downloads/SublimeText.dmg"
 curl http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%20Build%203065.dmg -o $SUBLIME_DMG_DEST 2> /dev/null
 hdiutil mount SublimeText.dmg 2> /dev/null
-cp "/Volumes/Sublime Text/Sublime Text.app" /Applications
+cp -R "/Volumes/Sublime Text/Sublime Text.app" /Applications
 hiutil unmount "/Volumes/Sublime Text/" 2> /dev/null
 rm $SUBLIME_DMG_DEST
 
 # Install Sublime Text settings
 SUBLIME_DIR='${HOME}/Library/Application\ Support/Sublime\ Text*'
 curl "https://sublime.wbond.net/Package%20Control.sublime-package" -o "${SUBLIME_DIR}/Installed\ Packages/Package Control.sublime-package"  2> /dev/null
-cp -r sublime $SUBLIME_DIR/Packages/User/ 2> /dev/null
+cp -R sublime $SUBLIME_DIR/Packages/User/ 2> /dev/null
+
+echo " [DONE]\n"
 
 ###############################################################################
 # Transmission.app                                                            #
