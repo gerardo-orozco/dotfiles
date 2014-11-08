@@ -623,7 +623,7 @@ SUBLIME_DIR='${HOME}/Library/Application\ Support/Sublime\ Text*'
 curl "https://sublime.wbond.net/Package%20Control.sublime-package" -o "${SUBLIME_DIR}/Installed\ Packages/Package Control.sublime-package"  2> /dev/null
 cp -R sublime $SUBLIME_DIR/Packages/User/ 2> /dev/null
 
-echo " [DONE]\n"
+echo " [DONE]"
 
 ###############################################################################
 # Transmission.app                                                            #
@@ -675,7 +675,7 @@ defaults write com.twitter.twitter-mac HideInBackground -bool true
 
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
 	"Dock" "Finder" "Mail" "Messages" "Safari" "SizeUp" "SystemUIServer" \
-	"Terminal" "Transmission" "Twitter" "iCal"; do
+	"Transmission" "Twitter" "iCal"; do
 	killall "${app}" > /dev/null 2>&1
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
