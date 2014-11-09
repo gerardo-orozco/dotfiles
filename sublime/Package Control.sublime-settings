@@ -3,7 +3,7 @@
 */
 {
     "installed_packages": [
-        "Package Control"
+        "Package Control",
 
         "Emmet",
         "Djaneiro",
