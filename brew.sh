@@ -23,7 +23,7 @@ brew upgrade
 # Install formulae tat requires install arguments
 # @TODO: Find a way to include the arguments in the iterative process below
 if brew list -1 | grep -q "^coreutils\$"; then
-    echo "+ '$formula_name' already installed"
+    echo "+ 'coreutils' already installed"
 else
     brew install coreutils
 fi
@@ -51,8 +51,13 @@ for formula in $formulae; do
     fi
 done
 
-brew tap phinze/homebrew-cask
-brew install brew-cask
+if brew list -1 | grep -q "^brew-cask\$"; then
+    echo "+ 'brew-cask' already installed"
+else
+    echo "+ Installing '$formula'..."
+    brew tap phinze/homebrew-cask 1> /dev/null
+    brew install brew-cask 1> /dev/null
+fi
 
 ###############################################################################
 # Casks
