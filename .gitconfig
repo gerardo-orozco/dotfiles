@@ -122,6 +122,7 @@
     added = green
     changed = yellow
     untracked = cyan
+    branch = magenta
 
 [credential]
 
