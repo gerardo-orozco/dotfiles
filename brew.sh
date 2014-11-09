@@ -36,12 +36,10 @@ echo "------------------------------------------------------------------------"
 formulae=$(<Brewfile)
 for formula in $formulae; do
     formula_name=$(echo $formula | cut -d' ' -f1)
-    if [ -z "${formula_name}" ]; then
-        if brew list -1 | grep -q "^${formula_name}\$"; then
-            echo "+ '$formula_name' already installed"
-        else
-            brew install $formula
-        fi
+    if brew list -1 | grep -q "^${formula_name}\$"; then
+        echo "+ '$formula_name' already installed"
+    else
+        brew install $formula
     fi
 done
 
@@ -57,12 +55,10 @@ echo "------------------------------------------------------------------------"
 formulae=$(<Caskfile)
 for formula in $formulae; do
     formula_name=$(echo $formula | cut -d' ' -f1)
-    if [ -z "${formula_name}" ]; then
-        if brew cask list -1 | grep -q "^${formula_name}\$"; then
-            echo "+ '$formula_name' already installed"
-        else
-            brew cask install $formula
-        fi
+    if brew cask list -1 | grep -q "^${formula_name}\$"; then
+        echo "+ '$formula_name' already installed"
+    else
+        brew cask install $formula
     fi
 done
 
