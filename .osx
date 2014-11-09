@@ -608,9 +608,9 @@ hiutil unmount "/Volumes/Sublime Text/" 2> /dev/null
 rm $SUBLIME_DMG_DEST
 
 # Install Sublime Text settings
-SUBLIME_DIR=${HOME}/Library/Application\ Support/Sublime\ Text\ 3
-curl "https://sublime.wbond.net/Package%20Control.sublime-package" -o $SUBLIME_DIR/Installed\ Packages/Package\ Control.sublime-package  1> /dev/null
-cp -R sublime/ $SUBLIME_DIR/Packages/User/
+curl "https://sublime.wbond.net/Package%20Control.sublime-package" -o "Package Control.sublime-package" 1> /dev/null
+mv -f Package\ Control.sublime-package ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages/Package\ Control.sublime-package
+cp -Rf sublime/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 
 ###############################################################################
 # Transmission.app                                                            #
