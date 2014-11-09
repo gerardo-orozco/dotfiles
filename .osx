@@ -619,8 +619,9 @@ hiutil unmount "/Volumes/Sublime Text/" 2> /dev/null
 rm $SUBLIME_DMG_DEST
 
 # Install Sublime Text settings
-SUBLIME_DIR='${HOME}/Library/Application\ Support/Sublime\ Text*'
-curl "https://sublime.wbond.net/Package%20Control.sublime-package" -o "${SUBLIME_DIR}/Installed\ Packages/Package Control.sublime-package"  2> /dev/null
+SUBLIME_DIR='${HOME}/Library/Application\ Support/Sublime\ Text\ 3'
+SUBLIME_DEST="${SUBLIME_DIR}/Installed\ Packages"
+curl "https://sublime.wbond.net/Package%20Control.sublime-package" -o "$SUBLIME_DEST/Package Control.sublime-package"  2> /dev/null
 cp -R sublime $SUBLIME_DIR/Packages/User/ 2> /dev/null
 
 echo " [DONE]"

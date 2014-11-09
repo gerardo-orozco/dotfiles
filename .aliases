@@ -12,7 +12,7 @@ alias h="history"
 colorflag="-G"
 
 # List all files colorized in long format
-alias l="ls -l ${colorflag}"
+alias ll="ls -l ${colorflag}"
 # List all files colorized in long format, including dot files
 alias la="ls -laF ${colorflag}"
 # List only directories
@@ -111,4 +111,8 @@ alias pull='git pull $@ origin $(git_branch)'
 # push only current branch
 alias push='git push -u $@ origin $(git_branch)'
 
+# A shortcut for "git status"
 alias st='git status'
+
+# A shortcut for a simple commit, avoiding the use of double-quotes
+alias gcommit='git commit -m "$@"'

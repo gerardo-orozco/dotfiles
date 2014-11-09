@@ -26,8 +26,10 @@
 
     # Show verbose output about tags, branches or remotes
     tags = tag -l
-    # this alias is givin error. check later
-    ; branches = "git branch -a | sed -Ee "s:^\*? *::" | sed -Ee "s:^(remotes/)?origin/::g" | grep -v "HEAD -> origin/master" | sort | uniq"
+
+    # this alias is giving error. check later
+    # branches = "git branch -a | sed -Ee "s:^\*? *::" | sed -Ee "s:^(remotes/)?origin/::g" | grep -v "HEAD -> origin/master" | sort | uniq"
+
     remotes = remote -v
 
     # Amend the currently staged files to the latest commit
