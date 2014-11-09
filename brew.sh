@@ -20,6 +20,8 @@ brew upgrade
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 
+# Install formulae tat requires install arguments
+# @TODO: Find a way to include the arguments in the iterative process below
 if brew list -1 | grep -q "^coreutils\$"; then
     echo "+ '$formula_name' already installed"
 else
@@ -27,19 +29,25 @@ else
 fi
 sudo ln -sf /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 
+brew install wget --with-iri;
+brew install gnu-sed --default-names;
+brew install vim --override-system-vi;
+brew install imagemagick --with-webp;
+
 ##############################################################################
 # Formulas
 ###############################################################################
 echo "------------------------------------------------------------------------"
 echo "Installing formulas"
 echo "------------------------------------------------------------------------"
+
 formulae=$(<Brewfile)
 for formula in $formulae; do
-    formula_name=$(echo $formula | cut -d' ' -f1)
-    if brew list -1 | grep -q "^${formula_name}\$"; then
-        echo "+ '$formula_name' already installed"
+    if brew list -1 | grep -q "^${formula}\$"; then
+        echo "+ '$formula' already installed"
     else
-        brew install $formula
+        echo "+ Installing '$formula'..."
+        brew install $formula 1> /dev/null
     fi
 done
 
@@ -54,11 +62,10 @@ echo "Installing Casks"
 echo "------------------------------------------------------------------------"
 formulae=$(<Caskfile)
 for formula in $formulae; do
-    formula_name=$(echo $formula | cut -d' ' -f1)
-    if brew cask list -1 | grep -q "^${formula_name}\$"; then
-        echo "+ '$formula_name' already installed"
+    if brew cask list -1 | grep -q "^${formula}\$"; then
+        echo "+ '$formula' already installed"
     else
-        echo "+ Installing '$formula_name'..."
+        echo "+ Installing '$formula'..."
         brew cask install $formula 1> /dev/null
     fi
 done
