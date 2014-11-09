@@ -58,7 +58,8 @@ for formula in $formulae; do
     if brew cask list -1 | grep -q "^${formula_name}\$"; then
         echo "+ '$formula_name' already installed"
     else
-        brew cask install $formula
+        echo "+ Installing '$formula_name'..."
+        brew cask install $formula 1> /dev/null
     fi
 done
 
