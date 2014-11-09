@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-# Install command-line tools using Homebrew.
+echo "------------------------------------------------------------------------"
+echo "Install command-line tools using Homebrew."
+echo "------------------------------------------------------------------------"
 
 # Ask for the administrator password upfront.
 sudo -v
@@ -9,11 +11,13 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Make sure we’re using the latest Homebrew.
+echo "Updating & upgrading brew..."
 brew update
 
 # Upgrade any already-installed formulae.
 brew upgrade
 
+echo "Installing packages..."
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
