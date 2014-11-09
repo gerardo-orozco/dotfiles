@@ -20,8 +20,12 @@ brew upgrade
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 
-brew install coreutils
-sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
+if brew list -1 | grep -q "^coreutils\$"; then
+    echo "+ '$formula_name' already installed"
+else
+    brew install coreutils
+fi
+sudo ln -sf /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 
 ##############################################################################
 # Formulas
@@ -64,3 +68,9 @@ done
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+
+# Install the Monokai theme for iTerm
+open "${HOME}/monokai.terminal/Monokai.itermcolors"
+# Don’t display the annoying prompt when quitting iTerm
+defaults write com.googlecode.iterm2 PromptOnQuit -bool false
