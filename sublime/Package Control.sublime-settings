@@ -6,32 +6,47 @@
         "Package Control",
 
         "Emmet",
-        "Djaneiro",
+        "Theme - Soda",
         "INI",
-        "requirementstxt",
-        "Restructured Text (RST) Snippets",
-        "Handlebars",
+        "VimL",
 
         "SublimeCodeIntel",
-        "jQuery",
+
+        "HTML Snippets",
         "Sass",
         "SCSS",
         "LESS",
-        "JsFormat",
-        "VimL",
 
-        "Theme - Soda",
-        "BracketHighlighter",
         "SideBarEnhancements",
         "SublimeLinter",
+
+        "Djaneiro",
+        "requirementstxt",
         "SublimeLinter-flake8",
+        "PythonTraceback",
+
         "Gist",
         "Gitignore",
-        "OmniMarkupPreviewer",
-        "PythonTraceback",
+        "Github Tools",
+
+        "jQuery",
         "Backbone.js",
+        "JSHint",
+        "JSLint",
+        "FixMyJS",
+        "AngularJS",
+        "AngularJS Snippets",
+        "Handlebars",
+        "JsFormat",
+        "JavaScript Completions",
+
+        "Jasmine JS",
+        "Jasmine Matchers Snippets",
+
+        "Restructured Text (RST) Snippets",
+        "OmniMarkupPreviewer",
         "Markdown Preview",
         "Origami",
-        "Bracket​Highlighter"
+        "BracketHighlighter"
     ]
 }

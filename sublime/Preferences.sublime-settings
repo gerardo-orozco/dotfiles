@@ -37,7 +37,8 @@
         ".svn",
         ".git",
         ".hg",
-        "CVS"
+        "CVS",
+        "node_modules"
     ],
     "font_size": 12.0,
     "highlight_line": true,
@@ -50,6 +51,7 @@
         79,
         99
     ],
+    "tab_size": 2,
     "scroll_past_end": true,
     "shift_tab_unindent": true,
     "sublimelinter": true,
