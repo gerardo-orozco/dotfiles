@@ -20,6 +20,7 @@
         "SideBarEnhancements",
         "SublimeLinter",
 
+        "Jinja2",
         "Djaneiro",
         "requirementstxt",
         "SublimeLinter-flake8",
