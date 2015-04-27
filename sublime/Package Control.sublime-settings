@@ -48,6 +48,7 @@
         "Markdown Preview",
         "Jade",
         "Origami",
-        "BracketHighlighter"
+        "BracketHighlighter",
+        "Gitignored File Excluder"
     ]
 }
