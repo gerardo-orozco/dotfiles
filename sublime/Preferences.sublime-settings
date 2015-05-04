@@ -60,5 +60,6 @@
     "trim_automatic_white_space": true,
     "trim_trailing_white_space_on_save": true,
     "wide_caret": true,
-    "word_wrap": false
+    "word_wrap": false,
+    "match_bracktets_angle": true
 }
