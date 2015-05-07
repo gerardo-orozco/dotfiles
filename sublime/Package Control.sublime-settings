@@ -26,6 +26,7 @@
         "requirementstxt",
         "SublimeLinter-flake8",
         "PythonTraceback",
+        "Flask Completions",
 
         "Gist",
         "Gitignore",
