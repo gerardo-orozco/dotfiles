@@ -25,6 +25,7 @@
         "Djaneiro",
         "requirementstxt",
         "SublimeLinter-flake8",
+        "SublimeLinter-pep8",
         "Jedi - Python autocompletion",
         "PythonTraceback",
         "Flask Completions",
