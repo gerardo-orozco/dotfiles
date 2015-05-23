@@ -54,6 +54,7 @@
         "Jade",
         "Origami",
         "BracketHighlighter",
-        "Gitignored File Excluder"
+        "Gitignored File Excluder",
+        "Pretty JSON"
     ]
 }
