@@ -4,6 +4,7 @@
 {
     "installed_packages": [
         "Package Control",
+        "Seti_UI",
 
         "Emmet",
         "Theme - Soda",

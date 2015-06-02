@@ -1,5 +1,6 @@
 {
     "bold_folder_labels": true,
+    "theme": "Seti.sublime-theme",
     "color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
     "copy_with_empty_selection": false,
     "draw_minimap_border": true,
