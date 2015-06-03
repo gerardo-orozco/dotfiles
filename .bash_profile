@@ -79,3 +79,5 @@ elif [[ -s "/usr/local/rvm/scripts/rvm" ]] ; then
   # Then try to load from a root install
   source "/usr/local/rvm/scripts/rvm"
 fi
+
+export FIGNORE='$FIGNORE:.egg-info:.dist-info:.sublime-project:.sublime-workspace'

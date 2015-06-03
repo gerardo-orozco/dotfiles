@@ -1,7 +1,6 @@
 {
     "bold_folder_labels": true,
-    "theme": "Seti.sublime-theme",
-    "color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+    "color_scheme": "Packages/User/SublimeLinter/Monokai-SetiUI (SL).tmTheme",
     "copy_with_empty_selection": false,
     "draw_minimap_border": true,
     "ensure_newline_at_eof_on_save": true,
@@ -53,6 +52,7 @@
         99
     ],
     "tab_size": 2,
+    "theme": "Seti.sublime-theme",
     "scroll_past_end": true,
     "shift_tab_unindent": true,
     "sublimelinter": true,
