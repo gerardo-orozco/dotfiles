@@ -59,6 +59,7 @@
         "Origami",
         "BracketHighlighter",
         "Gitignored File Excluder",
-        "Pretty JSON"
+        "Pretty JSON",
+        "Indent XML"
     ]
 }
