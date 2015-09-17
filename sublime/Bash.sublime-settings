@@ -1,0 +1,9 @@
+{
+  "extensions": [
+    "sh",
+    "bats",
+    "gitshell",
+    "bash_profile",
+    "bashrc"
+  ]
+}

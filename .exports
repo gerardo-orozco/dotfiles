@@ -20,3 +20,20 @@ export MANPAGER="less -X";
 
 # Always enable colored `grep` output
 export GREP_OPTIONS="--color=auto";
+export FIGNORE='$FIGNORE:.egg-info:.dist-info:.sublime-project:.sublime-workspace'
+
+################################################################################
+# Python utilitiy scripts
+################################################################################
+# Shell autocomplete
+export PYTHONSTARTUP="$HOME/.pyrc"
+
+# Prevent global instalation of python packages via pip
+export PIP_REQUIRE_VIRTUALENV=true
+
+# Don't create .pyc files
+export PYTHONDONTWRITEBYTECODE=true
+
+# Colorize the "ls" comand output
+export CLICOLOR=1
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx

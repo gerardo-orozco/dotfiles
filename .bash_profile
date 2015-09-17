@@ -46,18 +46,6 @@ complete -W "NSGlobalDomain" defaults;
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
-################################################################################
-# Python utilitiy scripts
-################################################################################
-# Shell autocomplete
-export PYTHONSTARTUP="$HOME/.pyrc"
-
-# Prevent global instalation of python packages via pip
-export PIP_REQUIRE_VIRTUALENV=true
-
-# Don't create .pyc files
-export PYTHONDONTWRITEBYTECODE=true
-
 # Django manage.py autocomplete
 source $HOME/.django_bash_completion
 
@@ -65,10 +53,6 @@ source $HOME/.django_bash_completion
 if `which virtualenvwrapper.sh` > /dev/null && [ -f "$(which virtualenvwrapper.sh)" ]; then
     source `which virtualenvwrapper.sh`
 fi
-
-# Colorize the "ls" comand output
-export CLICOLOR=1
-export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 # Load RVM into a shell session *as a function*
 if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then
@@ -79,5 +63,3 @@ elif [[ -s "/usr/local/rvm/scripts/rvm" ]] ; then
   # Then try to load from a root install
   source "/usr/local/rvm/scripts/rvm"
 fi
-
-export FIGNORE='$FIGNORE:.egg-info:.dist-info:.sublime-project:.sublime-workspace'
