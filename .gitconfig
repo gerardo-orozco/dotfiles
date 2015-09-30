@@ -64,7 +64,7 @@
     stash-unapply = !git stash show $@ -p | git apply -R
 
     # Undo the last commit and show the status after undoing
-    undo = reset --soft HEAD^ && git status
+    undo = !git reset --soft HEAD^ && git status
 
     # Abbreviations for merge conflicts resolution helpers
     ours = checkout --ours
