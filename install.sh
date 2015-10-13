@@ -1,5 +1,5 @@
 # First download the dotfiles
-cd; curl -#L https://github.com/gerardo-orozco/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,install.sh,LICENSE-MIT.txt} 1> /dev/null
+cd; curl -#L https://github.com/gerardo-orozco/dotfiles/tarball/vm-dotfiles | tar -xzv --strip-components 1 --exclude={README.md,install.sh,LICENSE-MIT.txt} 1> /dev/null
 
 # Install Homebrew and Git (required for some package installs)
 if [[ $(uname) == "Darwin" ]]; then
