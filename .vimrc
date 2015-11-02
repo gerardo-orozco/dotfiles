@@ -6,6 +6,9 @@ colorscheme monokai
 set expandtab
 " Set tab width to 4 spaces
 set tabstop=4
+set shiftwidth=4
+" Set <BS> to 4 spaces
+set softtabstop=4
 " Make Vim more useful
 set nocompatible
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
@@ -48,8 +51,6 @@ set number
 syntax on
 " Highlight current line
 set cursorline
-" Make tabs as wide as two spaces
-set tabstop=2
 " Show “invisible” characters
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set list
