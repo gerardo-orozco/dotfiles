@@ -5,6 +5,7 @@
     "installed_packages": [
         "Package Control",
         "Seti_UI",
+        "Seti_UX",
         "Monokai Extended",
         "ApplySyntax",
 
@@ -13,8 +14,13 @@
         "INI",
         "VimL",
         "nginx",
-
+        "SSH Config",
+        "Crontab Syntax",
+        "nagios-sublime",
         "SublimeCodeIntel",
+        "Case Conversion",
+
+        "C Improved",
 
         "HTML Snippets",
         "Sass",
@@ -24,29 +30,28 @@
         "SideBarEnhancements",
         "SublimeLinter",
 
-        "Jinja2",
-        "Djaneiro",
-        "requirementstxt",
-        "SublimeLinter-flake8",
-        "SublimeLinter-pep8",
+        "MagicPython",
+        "Python Flake8 Lint",
         "Jedi - Python autocompletion",
         "PythonTraceback",
+        "Djaneiro",
         "Flask Completions",
+        "Jinja2",
+        "requirementstxt",
 
         "Gist",
         "Gitignore",
         "Github Tools",
+        "Gitignored File Excluder",
 
         "jQuery",
-        "Backbone.js",
         "JSHint",
         "JSLint",
-        "FixMyJS",
-        "AngularJS",
-        "AngularJS Snippets",
         "Handlebars",
-        "JsFormat",
         "JavaScript Completions",
+        "Backbone.js",
+        "Babel",
+        "ES6-Toolkit",
 
         "Jasmine JS",
         "Jasmine Matchers Snippets",
@@ -57,11 +62,8 @@
         "Markdown Extended",
         "Restructured Text (RST) Snippets",
         "OmniMarkupPreviewer",
-        "Markdown Preview",
-        "Jade",
         "Origami",
         "BracketHighlighter",
-        "Gitignored File Excluder",
         "Pretty JSON",
         "Indent XML"
     ]
