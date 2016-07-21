@@ -1,9 +1,11 @@
 {
     "extensions": [
+        ".pypirc",
         "ansible_vm_inventory",
         "gitattributes",
         "gitconfig",
         "gitignore",
+        "hgignore",
         "ini",
         "ini.dist",
         "npmrc"

@@ -1,5 +1,9 @@
 {
   "extensions": [
+    ".aliases",
+    ".django_bash_completion",
+    ".exports",
+    ".functions",
     "bash",
     "bash_profile",
     "bashrc",
