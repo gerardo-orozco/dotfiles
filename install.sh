@@ -18,6 +18,7 @@ else
     \curl -sSL https://get.rvm.io | bash -s stable --ruby 2> /dev/null
 fi
 
-./.osx && ./brew.sh
+cd ./kickstart
+./osx_defaults.sh && ./brew.sh
 
 source ~/.bash_profile
