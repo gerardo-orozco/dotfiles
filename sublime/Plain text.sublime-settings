@@ -1,5 +1,11 @@
 {
+  "extensions": [
+    "txt",
+    "readme",
+    "changelog",
+    "log"
+  ],
+  "indent_subsequent_lines": true,
   "word_wrap": true,
-  "wrap_width": 79,
-  "indent_subsequent_lines": true
+  "wrap_width": 79
 }

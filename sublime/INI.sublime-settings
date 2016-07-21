@@ -1,11 +1,11 @@
 {
-  "extensions":
-  [
-    ".gitconfig",
-    ".npmrc",
-    "ini.dist",
-    ".gitignore",
-    ".gitattributes",
-    ".ini"
-  ]
+    "extensions": [
+        "ansible_vm_inventory",
+        "gitattributes",
+        "gitconfig",
+        "gitignore",
+        "ini",
+        "ini.dist",
+        "npmrc"
+    ]
 }

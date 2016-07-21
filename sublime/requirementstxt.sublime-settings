@@ -1,0 +1,6 @@
+{
+  "extensions": [
+    "dev_requirements.txt",
+    "freeze_requirements.txt"
+  ]
+}

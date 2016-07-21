@@ -1,0 +1,6 @@
+{
+  "ignore": ["E121", "E123", "E126", "E226", "E24", "E704"],
+  "pep8_max_line_length": 120,
+  "popup": false,
+  "pydocstyle": false
+}

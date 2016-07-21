@@ -1,9 +1,10 @@
 {
   "extensions": [
-    "sh",
+    "bash",
+    "bash_profile",
+    "bashrc",
     "bats",
     "gitshell",
-    "bash_profile",
-    "bashrc"
+    "sh"
   ]
 }
