@@ -44,12 +44,14 @@
     "highlight_line": true,
     "ignored_packages":
     [
+        "Python",
         "Vintage"
     ],
+    "match_bracktets_angle": true,
     "rulers":
     [
         79,
-        99
+        120
     ],
     "tab_size": 2,
     "theme": "Seti.sublime-theme",
@@ -61,6 +63,5 @@
     "trim_automatic_white_space": true,
     "trim_trailing_white_space_on_save": true,
     "wide_caret": true,
-    "word_wrap": false,
-    "match_bracktets_angle": true
+    "word_wrap": false
 }
