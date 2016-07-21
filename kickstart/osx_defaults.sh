@@ -586,24 +586,6 @@ defaults write com.irradiatedsoftware.SizeUp StartAtLogin -bool true
 defaults write com.irradiatedsoftware.SizeUp ShowPrefsOnNextStart -bool false
 
 ###############################################################################
-# Sublime Text                                                                #
-###############################################################################
-
-# Install Sublime Text 3
-echo "Installing Sublime Text 3..."
-SUBLIME_DMG_DEST="${HOME}/Downloads/SublimeText.dmg"
-curl http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%20Build%203065.dmg -o $SUBLIME_DMG_DEST
-hdiutil mount SublimeText.dmg 2> /dev/null
-cp -R "/Volumes/Sublime Text/Sublime Text.app" /Applications
-hiutil unmount "/Volumes/Sublime Text/" 2> /dev/null
-rm $SUBLIME_DMG_DEST
-
-# Install Sublime Text settings
-curl "https://sublime.wbond.net/Package%20Control.sublime-package" -o "Package Control.sublime-package" 1> /dev/null
-mv -f Package\ Control.sublime-package ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages/Package\ Control.sublime-package
-cp -Rf sublime/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-
-###############################################################################
 # Transmission.app                                                            #
 ###############################################################################
 

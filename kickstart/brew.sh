@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# First off, install Homebrew and Git
+echo "Installing Homebrew..."
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" 2> /dev/null
+
 echo "########################################################################"
 echo "Install command-line tools using Homebrew."
 echo "########################################################################"
