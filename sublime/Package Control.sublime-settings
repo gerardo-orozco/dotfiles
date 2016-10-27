@@ -9,23 +9,11 @@
         "Monokai Extended",
         "ApplySyntax",
 
-        "Emmet",
         "Theme - Soda",
-        "INI",
-        "VimL",
         "nginx",
-        "SSH Config",
-        "Crontab Syntax",
         "nagios-sublime",
         "SublimeCodeIntel",
         "Case Conversion",
-
-        "C Improved",
-
-        "HTML Snippets",
-        "Sass",
-        "SCSS",
-        "LESS",
 
         "SideBarEnhancements",
         "SublimeLinter",
@@ -33,31 +21,15 @@
         "MagicPython",
         "Python Flake8 Lint",
         "Jedi - Python autocompletion",
-        "PythonTraceback",
         "Djaneiro",
-        "Flask Completions",
         "Jinja2",
-        "requirementstxt",
 
         "Gist",
-        "Gitignore",
         "Github Tools",
         "Gitignored File Excluder",
 
-        "jQuery",
-        "JSHint",
-        "JSLint",
-        "Handlebars",
         "JavaScript Completions",
-        "Backbone.js",
         "Babel",
-        "ES6-Toolkit",
-
-        "Jasmine JS",
-        "Jasmine Matchers Snippets",
-
-        "Ansible",
-        "AnsibleSnippets",
 
         "Markdown Extended",
         "Restructured Text (RST) Snippets",
