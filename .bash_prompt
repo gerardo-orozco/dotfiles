@@ -102,6 +102,7 @@ fi;
 
 # Set the terminal title to the current working directory.
 PS1="\[\033]0;\w\007\]";
+PS1+="[\D{%F %T}]"
 PS1+="\[${bold}${userStyle}\]\u"; # username
 PS1+="\[${white}\]@";
 PS1+="\[${bold}${hostStyle}\]\h"; # host
