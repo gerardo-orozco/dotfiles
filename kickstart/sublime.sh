@@ -14,7 +14,7 @@ SUBLIME_DIR="${HOME}/Library/Application\ Support/Sublime\ Text\ 3"
 
 
 # Download the DMG file
-curl http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%20Build%203065.dmg -o $SUBLIME_DMG
+curl https://download.sublimetext.com/Sublime%20Text%20Build%203176.dmg -o $SUBLIME_DMG
 
 # Mount the DMG
 hdiutil mount SublimeText.dmg 2> /dev/null

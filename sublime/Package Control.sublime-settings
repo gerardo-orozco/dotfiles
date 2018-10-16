@@ -1,42 +1,33 @@
-/*
-    I found some of these packages here: https://sublime.wbond.net/browse/popular
-*/
 {
-    "installed_packages": [
-        "Package Control",
-        "Seti_UI",
-        "Seti_UX",
-        "Monokai Extended",
-        "ApplySyntax",
-
-        "Theme - Soda",
-        "nginx",
-        "nagios-sublime",
-        "SublimeCodeIntel",
+    "installed_packages":
+    [
+        "Babel",
+        "BracketHighlighter",
         "Case Conversion",
-
-        "SideBarEnhancements",
-        "SublimeLinter",
-
-        "MagicPython",
-        "Python Flake8 Lint",
-        "Jedi - Python autocompletion",
+        "Crontab",
         "Djaneiro",
-        "Jinja2",
-
         "Gist",
         "Github Tools",
         "Gitignored File Excluder",
-
         "JavaScript Completions",
-        "Babel",
-
+        "Jedi - Python autocompletion",
+        "Jinja2",
+        "MagicPython",
         "Markdown Extended",
-        "Restructured Text (RST) Snippets",
+        "Monokai Extended",
+        "nginx",
         "OmniMarkupPreviewer",
         "Origami",
-        "BracketHighlighter",
+        "Package Control",
         "Pretty JSON",
-        "Indent XML"
+        "Python Breakpoints",
+        "Python Flake8 Lint",
+        "SCSS",
+        "Seti_UI",
+        "Seti_UX",
+        "SideBarEnhancements",
+        "SublimeCodeIntel",
+        "Theme - Seti Monokai",
+        "Theme - Soda"
     ]
 }

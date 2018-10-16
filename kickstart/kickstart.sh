@@ -7,6 +7,6 @@ curl -#L https://github.com/gerardo-orozco/dotfiles/tarball/master | tar -xzv --
 [[ "$?" != "0" ]] && exit 1
 for f_name in 'osx_defaults.sh brew.sh sublime.sh rvm.sh'; do
   ./kickstart/$f_name
-  [[ "$?" == "0" ]] && exit 1
+  [[ "$?" != "0" ]] && exit 1
 done
 source ${HOME}/.bash_profile
