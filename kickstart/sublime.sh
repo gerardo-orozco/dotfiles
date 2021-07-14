@@ -1,3 +1,5 @@
+set -x
+
 # ---------------
 # Install the app
 # ---------------
@@ -8,20 +10,22 @@ test -f "$(readlink $(which subl))"
   echo -e "\talready installed. Skipping."; exit
 }
 
+set -e
+
 SCRIPT_DIR=$(realpath $(dirname ${BASH_SOURCE[0]}))
 SUBLIME_DMG="${HOME}/Downloads/SublimeText.dmg"
 SUBLIME_DIR="${HOME}/Library/Application\ Support/Sublime\ Text\ 3"
-
+SUBLIME_VOLUME="/Volumes/Sublime Text"
 
 # Download the DMG file
 curl https://download.sublimetext.com/Sublime%20Text%20Build%203176.dmg -o $SUBLIME_DMG
 
 # Mount the DMG
-hdiutil mount SublimeText.dmg 2> /dev/null
+hdiutil mount $SUBLIME_DMG 2> /dev/null
 # copy the app to the Applications directory
-cp -R "/Volumes/Sublime Text/Sublime Text.app" /Applications
+cp -R "${SUBLIME_VOLUME}/Sublime Text.app" /Applications
 # unmount the DMG
-hiutil unmount "/Volumes/Sublime Text/" 2> /dev/null
+hiutil unmount "${SUBLIME_VOLUME}" 2> /dev/null
 # and remove the DMG file, we don't need it anymore
 rm $SUBLIME_DMG
 
