@@ -76,5 +76,3 @@ export GOPATH="$HOME/go"
 export PATH="/usr/local/go/bin:$GOPATH/bin:$PATH"
 
 export PATH="/usr/local/opt/openssl/bin:$PATH"
-
-eval "$(direnv hook bash)"
