@@ -44,7 +44,7 @@ echo "------------------------------------------------------------------------"
 
 formulae=$(<$SCRIPT_DIR/Brewfile)
 for formula in $formulae; do
-    if brew list -1 | grep -q "^${formula}\$"; then
+    if brew list -1 --formula | grep -q "^${formula}\$"; then
         echo "+ '$formula' already installed"
     else
         echo "+ Installing '$formula'..."
@@ -52,23 +52,16 @@ for formula in $formulae; do
     fi
 done
 
-if brew list -1 | grep -q "^brew-cask\$"; then
-    echo "+ 'brew-cask' already installed"
-else
-    echo "+ Installing '$formula'..."
-    brew tap phinze/homebrew-cask 1> /dev/null
-    brew install brew-cask 1> /dev/null
-fi
-
 ###############################################################################
 # Casks
 ###############################################################################
 echo "------------------------------------------------------------------------"
 echo "Installing Casks"
 echo "------------------------------------------------------------------------"
+
 formulae=$(<$SCRIPT_DIR/Caskfile)
 for formula in $formulae; do
-    if brew cask list -1 | grep -q "^${formula}\$"; then
+    if brew list -1 --cask | grep -q "^${formula}\$"; then
         echo "+ '$formula' already installed"
     else
         echo "+ Installing '$formula'..."
