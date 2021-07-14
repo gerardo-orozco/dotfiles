@@ -52,10 +52,6 @@ export PROD_TOKEN=''
 export STAGE_TOKEN=''
 export PDA_TOKEN=''
 
-export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
-export PATH="/opt/apache-maven-3.6.0/bin:$PATH"
-export CATALINA_HOME="/usr/local/opt/tomcat@8/libexec"
-
 export DELUGE_DIR="/Applications/Deluge.app/Contents/MacOS/"
 
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
