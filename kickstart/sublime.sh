@@ -10,11 +10,9 @@ test -f "$(readlink $(which subl))"
   echo -e "\talready installed. Skipping."; exit
 }
 
-set -e
-
 SCRIPT_DIR=$(realpath $(dirname ${BASH_SOURCE[0]}))
 SUBLIME_DMG="${HOME}/Downloads/SublimeText.dmg"
-SUBLIME_DIR="${HOME}/Library/Application\ Support/Sublime\ Text\ 3"
+SUBLIME_DIR="${HOME}/Library/Application Support/Sublime Text 3"
 SUBLIME_VOLUME="/Volumes/Sublime Text"
 PKG_CTRL_DIR="${HOME}/Downloads/Package Control.sublime-package"
 
@@ -33,10 +31,10 @@ rm $SUBLIME_DMG
 # --------------------------------
 # Install the settings and plugins
 # --------------------------------
-curl "https://sublime.wbond.net/Package%20Control.sublime-package" -o $PKG_CTRL_DIR 1> /dev/null
-mv -f $PKG_CTRL_DIR "${SUBLIME_DIR}/Installed Packages/Package Control.sublime-package"
+curl "https://sublime.wbond.net/Package%20Control.sublime-package" -o "$PKG_CTRL_DIR" 1> /dev/null
+mv -f "$PKG_CTRL_DIR" "${SUBLIME_DIR}/Installed Packages/Package Control.sublime-package"
 
 # With "Package Control" installed, Sublime will automatically install the
 # packages in "Package Control.sublime-settings" when it runs for the
 # first time, so it just needs to be copied to the appropriate location.
-cp -Rf $SCRIPT_DIR/../sublime/ $SUBLIME_DIR/Packages/User/
+cp -Rf $SCRIPT_DIR/../sublime/ "$SUBLIME_DIR/Packages/User/"
