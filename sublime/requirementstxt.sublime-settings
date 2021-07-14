@@ -1,0 +1,7 @@
+// These settings override both User and Default settings for the requirementstxt syntax
+{
+  "extensions": [
+    "requirements.txt",
+    "requirements-to-freeze.txt"
+  ]
+}

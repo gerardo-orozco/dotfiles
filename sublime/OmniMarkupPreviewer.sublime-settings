@@ -1,0 +1,8 @@
+{
+    "server_host": "0.0.0.0",
+    "server_port": 51004,
+    "renderer_options-MarkdownRenderer":
+    {
+        "extensions": ["markdown.extensions.tables", "markdown.extensions.fenced_code", "markdown.extensions.codehilite"]
+    }
+}

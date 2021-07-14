@@ -1,6 +1,10 @@
 {
-  "ignore": ["E121", "E123", "E126", "E226", "E24", "E704"],
+  "lint_on_load": true,
+  "ignore": ["E265","E402", "E704"],
   "pep8_max_line_length": 120,
   "popup": false,
-  "pydocstyle": false
+  "pydocstyle": false,
+  "import-order": true,
+  "python_interpreter": "/Users/gerard/.pyenv/shims/python",
+  "use_flake8_global_config": false
 }
