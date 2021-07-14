@@ -9,6 +9,8 @@ homebrew/dupes/grep
 homebrew/dupes/screen
 homebrew/versions/lua52
 hub
+jq
+kext-updater
 libjpeg
 libpng
 lynx
@@ -26,7 +28,8 @@ pv
 python
 rename
 ringojs
+the-unarchiver
 tree
+vim
 webkit2png
 wget
-vim

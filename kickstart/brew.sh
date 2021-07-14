@@ -75,13 +75,12 @@ for formula in $formulae; do
         echo "+ '$formula' already installed"
     else
         echo "+ Installing '$formula'..."
-        brew cask install $formula 1> /dev/null
+        brew install --cask $formula 1> /dev/null
     fi
 done
 
 # Remove outdated versions from the cellar.
 brew cleanup
-
 
 # Install the Monokai theme for iTerm
 open "${HOME}/monokai.terminal/Monokai.itermcolors"
