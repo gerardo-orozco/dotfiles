@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
 # First off, install Homebrew and Git
 echo "Installing Homebrew..."
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" 2> /dev/null
@@ -40,7 +42,7 @@ echo "------------------------------------------------------------------------"
 echo "Installing formulas"
 echo "------------------------------------------------------------------------"
 
-formulae=$(<Brewfile)
+formulae=$(<$SCRIPT_DIR/Brewfile)
 for formula in $formulae; do
     if brew list -1 | grep -q "^${formula}\$"; then
         echo "+ '$formula' already installed"
@@ -64,7 +66,7 @@ fi
 echo "------------------------------------------------------------------------"
 echo "Installing Casks"
 echo "------------------------------------------------------------------------"
-formulae=$(<Caskfile)
+formulae=$(<$SCRIPT_DIR/Caskfile)
 for formula in $formulae; do
     if brew cask list -1 | grep -q "^${formula}\$"; then
         echo "+ '$formula' already installed"
