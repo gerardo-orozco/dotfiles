@@ -5,10 +5,12 @@ cowsay
 fcrackzip
 findutils
 git
+gnu-sed
 homebrew/dupes/grep
 homebrew/dupes/screen
 homebrew/versions/lua52
 hub
+imagemagick
 jq
 kext-updater
 libjpeg

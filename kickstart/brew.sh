@@ -33,11 +33,6 @@ else
 fi
 sudo ln -sf /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 
-brew install wget --with-iri;
-brew install gnu-sed --default-names;
-brew install vim --override-system-vi;
-brew install imagemagick --with-webp;
-
 ##############################################################################
 # Formulas
 ###############################################################################
