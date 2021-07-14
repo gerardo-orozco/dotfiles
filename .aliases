@@ -8,6 +8,7 @@ alias dt="cd ~/Desktop"
 alias cod="cd ~/code"
 alias g="git"
 alias h="history"
+alias bf='cd /opt/buzzfeed/mono && pyenv activate bf'
 
 colorflag="-G"
 
@@ -116,7 +117,14 @@ alias st='git status'
 # A shortcut for a simple commit, avoiding the use of double-quotes
 alias gcommit='git commit -m "$@"'
 
-
 alias pt='papertrail'
 
 alias numperms="stat -f '%A %N' $@"
+
+alias screenshot_shadow_off="defaults write com.apple.screencapture disable-shadow -bool true ; killall SystemUIServer"
+alias screenshot_shadow_on="defaults write com.apple.screencapture disable-shadow -bool false ; killall SystemUIServer"
+
+alias deluge-start="$DELUGE_DIR/deluged & sleep 1 && $DELUGE_DIR/deluge-web & sleep 1 && open http://localhost:8112/"
+alias deluge-stop="ps aux | grep deluge | awk '{print $3}' | xargs kill"
+
+alias ssh-use="ln -sf $1 ~/.ssh/id_rsa; ln -sf $1 ~/.ssh/id_rsa.pub"

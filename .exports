@@ -37,3 +37,36 @@ export PYTHONDONTWRITEBYTECODE=true
 # Colorize the "ls" comand output
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+
+export WORKDAY_AUTH=''
+
+export PATH="/usr/local/lib/python3.6/site-packages:$PATH"
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+export PATH="/Users/gerard/.chefdk/gem/ruby/2.3.0/bin:$PATH"
+export EDITOR=vim
+
+export PROD_TOKEN=''
+export STAGE_TOKEN=''
+export PDA_TOKEN=''
+
+export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+export PATH="/opt/apache-maven-3.6.0/bin:$PATH"
+export CATALINA_HOME="/usr/local/opt/tomcat@8/libexec"
+
+export DELUGE_DIR="/Applications/Deluge.app/Contents/MacOS/"
+
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+
+export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
+export LDFLAGS="-L/usr/local/opt/zlib/lib"
+export CPPFLAGS="-I/usr/local/opt/zlib/include"
+
+export S3KEYRING_INI=srv/s3keyring.ini
+
+export GITHUB_BF_TOKEN=""
+export CLOUDSDK_PYTHON=/usr/local/bin/python3
+
+export PATH="$HOME/bin:$PATH"

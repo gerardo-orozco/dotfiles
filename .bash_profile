@@ -49,11 +49,6 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # Django manage.py autocomplete
 source $HOME/.django_bash_completion
 
-# If virtualenvwrapper is installed, lead it
-if `which virtualenvwrapper.sh` > /dev/null && [ -f "$(which virtualenvwrapper.sh)" ]; then
-    source `which virtualenvwrapper.sh`
-fi
-
 # Load RVM into a shell session *as a function*
 if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then
   # First try to load from a user install
@@ -63,3 +58,23 @@ elif [[ -s "/usr/local/rvm/scripts/rvm" ]] ; then
   # Then try to load from a root install
   source "/usr/local/rvm/scripts/rvm"
 fi
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
+fi
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+#export PATH="/usr/local/opt/ansible@2.0/bin:$PATH"
+
+export ENVIRONMENT=development
+export NODE_ENV=development
+
+export GOPATH="$HOME/go"
+export PATH="/usr/local/go/bin:$GOPATH/bin:$PATH"
+
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+
+eval "$(direnv hook bash)"
